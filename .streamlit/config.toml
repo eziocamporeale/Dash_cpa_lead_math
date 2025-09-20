@@ -1,0 +1,27 @@
+[global]
+# Configurazione globale Streamlit
+developmentMode = false
+
+[server]
+# Configurazione server
+headless = true
+port = 8501
+enableCORS = false
+enableXsrfProtection = true
+maxUploadSize = 200
+
+[browser]
+# Configurazione browser
+gatherUsageStats = false
+
+[theme]
+# Tema personalizzato
+primaryColor = "#2E86AB"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F0F2F6"
+textColor = "#262730"
+font = "sans serif"
+
+[logger]
+# Configurazione logging
+level = "info"
