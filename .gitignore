@@ -1,0 +1,49 @@
+# Streamlit secrets - MAI COMMITTARE!
+.streamlit/secrets.toml
+.streamlit/secrets.toml.local
+
+# File di configurazione sensibili
+.env
+.env.local
+.env.production
+
+# Database locali
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# Backup
+backups/
+*.backup
+
+# Cache Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
