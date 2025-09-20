@@ -6,6 +6,7 @@
 .env
 .env.local
 .env.production
+config_local.py
 
 # Database locali
 *.db

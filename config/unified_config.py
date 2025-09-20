@@ -42,22 +42,22 @@ class UnifiedConfig:
     def _init_supabase_configs(self):
         """Inizializza configurazioni Supabase per tutti i progetti"""
         # Progetto LEAD
-        self.lead_supabase_url = self._get_config('LEAD_SUPABASE_URL', 'https://xjjmpurdjqwjomxmqqks.supabase.co')
-        self.lead_supabase_key = self._get_config('LEAD_SUPABASE_KEY', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inhqam1wdXJkanF3am9teG1xcWtzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTY4OTI2NzMsImV4cCI6MjA3MjQ2ODY3M30.grFLiS6zmYGx5wNxuFKND5qHeYc71Nl_Tf8Sp4ce-ao')
+        self.lead_supabase_url = self._get_config('LEAD_SUPABASE_URL')
+        self.lead_supabase_key = self._get_config('LEAD_SUPABASE_KEY')
         
         # Progetto CPA
-        self.cpa_supabase_url = self._get_config('CPA_SUPABASE_URL', 'https://your-cpa-project.supabase.co')
-        self.cpa_supabase_key = self._get_config('CPA_SUPABASE_KEY', 'your-cpa-supabase-key')
+        self.cpa_supabase_url = self._get_config('CPA_SUPABASE_URL')
+        self.cpa_supabase_key = self._get_config('CPA_SUPABASE_KEY')
         
         # Progetto PROP BROKER
-        self.prop_supabase_url = self._get_config('PROP_SUPABASE_URL', 'https://znkhbkiexrqujqwgzueq.supabase.co')
-        self.prop_supabase_key = self._get_config('PROP_SUPABASE_KEY', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inpua2hia2lleHJxdWpxd2d6dWVxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc1MDU0OTQsImV4cCI6MjA3MzA4MTQ5NH0.OPAUp3lDz4ms8ftizS0bELInOaZdouxFx2jbcgD9NAc')
+        self.prop_supabase_url = self._get_config('PROP_SUPABASE_URL')
+        self.prop_supabase_key = self._get_config('PROP_SUPABASE_KEY')
     
     def _init_ai_config(self):
         """Inizializza configurazione AI Assistant"""
-        self.deepseek_api_key = self._get_config('DEEPSEEK_API_KEY', 'sk-f7531fb25e8a4ba3ae22d8b33c7d97a1')
-        self.deepseek_api_url = self._get_config('DEEPSEEK_API_URL', 'https://api.deepseek.com/v1/chat/completions')
-        self.deepseek_model = self._get_config('DEEPSEEK_MODEL', 'deepseek-chat')
+        self.deepseek_api_key = self._get_config('DEEPSEEK_API_KEY')
+        self.deepseek_api_url = self._get_config('DEEPSEEK_API_URL')
+        self.deepseek_model = self._get_config('DEEPSEEK_MODEL')
         
         # Configurazione AI Assistant
         self.ai_config = {
@@ -82,12 +82,12 @@ class UnifiedConfig:
         }
         
         # Credenziali admin
-        self.admin_username = self._get_config('ADMIN_USERNAME', 'admin')
-        self.admin_password = self._get_config('ADMIN_PASSWORD', 'admin123')
-        self.manager_username = self._get_config('MANAGER_USERNAME', 'manager')
-        self.manager_password = self._get_config('MANAGER_PASSWORD', 'manager123')
-        self.viewer_username = self._get_config('VIEWER_USERNAME', 'viewer')
-        self.viewer_password = self._get_config('VIEWER_PASSWORD', 'viewer123')
+        self.admin_username = self._get_config('ADMIN_USERNAME')
+        self.admin_password = self._get_config('ADMIN_PASSWORD')
+        self.manager_username = self._get_config('MANAGER_USERNAME')
+        self.manager_password = self._get_config('MANAGER_PASSWORD')
+        self.viewer_username = self._get_config('VIEWER_USERNAME')
+        self.viewer_password = self._get_config('VIEWER_PASSWORD')
     
     def _init_app_config(self):
         """Inizializza configurazione app"""

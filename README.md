@@ -78,11 +78,11 @@ pip install -r requirements.txt
 3. **Configura le variabili d'ambiente**
 ```bash
 # Crea file .env
-export LEAD_SUPABASE_URL="https://xjjmpurdjqwjomxmqqks.supabase.co"
+export LEAD_SUPABASE_URL="https://your-lead-project.supabase.co"
 export LEAD_SUPABASE_KEY="your-lead-key"
 export CPA_SUPABASE_URL="https://your-cpa-project.supabase.co"
 export CPA_SUPABASE_KEY="your-cpa-key"
-export PROP_SUPABASE_URL="https://znkhbkiexrqujqwgzueq.supabase.co"
+export PROP_SUPABASE_URL="https://your-prop-project.supabase.co"
 export PROP_SUPABASE_KEY="your-prop-key"
 export DEEPSEEK_API_KEY="your-deepseek-key"
 ```
@@ -138,9 +138,9 @@ streamlit run app.py
 
 ### **Database Supabase**
 Ogni progetto mantiene il suo database Supabase separato:
-- **LEAD**: `https://xjjmpurdjqwjomxmqqks.supabase.co`
+- **LEAD**: `https://your-lead-project.supabase.co`
 - **CPA**: `https://your-cpa-project.supabase.co`
-- **PROP**: `https://znkhbkiexrqujqwgzueq.supabase.co`
+- **PROP**: `https://your-prop-project.supabase.co`
 
 ### **Sicurezza**
 - **RLS**: Row Level Security abilitato su tutte le tabelle
